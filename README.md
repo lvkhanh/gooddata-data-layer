@@ -44,7 +44,7 @@ $ yarn test
 ```
 git checkout master && git pull upstream master --tags
 npm version patch -m "Release v%s"
-npm publish --access=restricted
+npm publish
 git push upstream master --tags
 ```
 
