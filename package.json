@@ -22,7 +22,7 @@
     "@types/json-stable-stringify": "1.0.32",
     "@types/lodash": "4.14.61",
     "@types/node": "7.0.8",
-    "gooddata": "6.0.0-alpha0",
+    "gooddata": "6.0.0-alpha1",
     "jest": "21.1.0",
     "jest-junit": "3.0.0",
     "ts-jest": "21.0.0",
