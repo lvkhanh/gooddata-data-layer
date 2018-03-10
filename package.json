@@ -1,6 +1,6 @@
 {
   "name": "@gooddata/data-layer",
-  "version": "6.0.0-alpha5",
+  "version": "6.0.0",
   "description": "",
   "main": "dist/index.js",
   "files": [
