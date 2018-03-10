@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@gooddata/typings@1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@gooddata/typings/-/typings-1.0.0.tgz#3fb9abcfbefc15745d6a0236c924d0d93e490e14"
+"@gooddata/typings@1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@gooddata/typings/-/typings-1.0.1.tgz#ec39e13bfb5ba28ce0f5b558e1745ed9e566f897"
 
 "@types/express-serve-static-core@*":
   version "4.0.52"
@@ -931,11 +931,11 @@ globals@^9.18.0:
   version "9.18.0"
   resolved "https://registry.yarnpkg.com/globals/-/globals-9.18.0.tgz#aa3896b3e69b487f17e31ed2143d69a8e30c2d8a"
 
-gooddata@5.0.0-alpha4:
-  version "5.0.0-alpha4"
-  resolved "https://registry.yarnpkg.com/gooddata/-/gooddata-5.0.0-alpha4.tgz#a655919f3eaad5a4f5d2be5ca4f3be35fbc2e721"
+gooddata@5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/gooddata/-/gooddata-5.0.0.tgz#45a0e277c2b9867ebac537388c043f07852be8a2"
   dependencies:
-    "@gooddata/typings" "1.0.0"
+    "@gooddata/typings" "1.0.1"
     es6-promise "3.0.2"
     fetch-cookie "0.4.0"
     invariant "2.2.2"

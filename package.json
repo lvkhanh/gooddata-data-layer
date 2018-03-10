@@ -15,14 +15,14 @@
     "rxjs": "^5.5.6"
   },
   "devDependencies": {
-    "@gooddata/typings": "1.0.0",
+    "@gooddata/typings": "1.0.1",
     "@types/express": "4.0.37",
     "@types/invariant": "2.2.29",
     "@types/jest": "21.1.1",
     "@types/json-stable-stringify": "1.0.32",
     "@types/lodash": "4.14.61",
     "@types/node": "7.0.8",
-    "gooddata": "5.0.0-alpha4",
+    "gooddata": "5.0.0",
     "jest": "21.1.0",
     "jest-junit": "3.0.0",
     "ts-jest": "21.0.0",
