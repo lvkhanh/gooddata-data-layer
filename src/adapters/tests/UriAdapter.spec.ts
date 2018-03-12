@@ -15,6 +15,7 @@ describe('UriAdapter', () => {
                 content: charts.simpleMeasure
             }
         };
+        sdk.clone = () => sdk; // disable clone for spyOn to work
 
         jest.spyOn(sdk.xhr, 'get')
             .mockImplementation(() => Promise.resolve(visualizationObject));
@@ -35,23 +36,23 @@ describe('UriAdapter', () => {
     });
 
     it('should handle fail of vis. obj. fetch', () => {
-        const DummySDK = createDummySDK();
-        const adapter = new UriAdapter(DummySDK, projectId);
-        DummySDK.xhr.get = jest.fn(() => Promise.reject('invalid URI'));
+        const dummySDK = createDummySDK();
+        const adapter = new UriAdapter(dummySDK, projectId);
+        dummySDK.xhr.get = jest.fn(() => Promise.reject('invalid URI'));
         return adapter.createDataSource({ uri }).catch((error) => {
             expect(error).toBe('invalid URI');
         });
     });
 
     it('should request visualization object for consecutive createDataSource call only when uri changes', () => {
-        const DummySDK = createDummySDK();
-        const adapter = new UriAdapter(DummySDK, projectId);
+        const dummySDK = createDummySDK();
+        const adapter = new UriAdapter(dummySDK, projectId);
         return adapter.createDataSource({ uri }).then(() => {
-            expect(DummySDK.xhr.get).toHaveBeenCalledTimes(1);
+            expect(dummySDK.xhr.get).toHaveBeenCalledTimes(1);
             return adapter.createDataSource({ uri }).then(() => {
-                expect(DummySDK.xhr.get).toHaveBeenCalledTimes(1);
+                expect(dummySDK.xhr.get).toHaveBeenCalledTimes(1);
                 return adapter.createDataSource({ uri: uri2 }).then(() => {
-                    expect(DummySDK.xhr.get).toHaveBeenCalledTimes(2);
+                    expect(dummySDK.xhr.get).toHaveBeenCalledTimes(2);
                 });
             });
         });
