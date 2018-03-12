@@ -7,6 +7,7 @@ import { ExecuteAfmAdapter } from './ExecuteAfmAdapter';
 import { toAfmResultSpec } from '../converters/toAfmResultSpec';
 import { appendFilters } from '../utils/AfmUtils';
 import { IDataSourceParams } from '../interfaces/DataSourceParams';
+import { name as pkgName, version as pkgVersion } from '../../package.json';
 
 function defaultExecuteAdapterFactory(
     sdk: ISdk,
@@ -16,14 +17,18 @@ function defaultExecuteAdapterFactory(
 }
 
 export class UriAdapter implements IAdapter<Execution.IExecutionResponses> {
+    private sdk: ISdk;
     private uri: string;
     private visualizationObject: VisualizationObject.IVisualizationObjectResponse;
 
     constructor(
-        private sdk: ISdk,
+        sdk: ISdk,
         private projectId: string,
         private executeAdapterFactory: any = defaultExecuteAdapterFactory
-    ) {}
+    ) {
+        this.sdk = sdk.clone();
+        this.sdk.config.setJsPackage(pkgName, pkgVersion);
+    }
 
     public createDataSource(sourceParams: IDataSourceParams): Promise<IDataSource<any>> {
         return this.fetchVisualizationObject(sourceParams.uri)
