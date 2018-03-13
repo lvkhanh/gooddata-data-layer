@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import { createSubject } from '../async';
 
 function delay(timeout = 0) {

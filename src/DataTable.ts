@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import get = require('lodash/get');
 import isEmpty = require('lodash/isEmpty');
 import isEqual = require('lodash/isEqual');

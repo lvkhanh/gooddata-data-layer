@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import flatMap = require('lodash/flatMap');
 import compact = require('lodash/compact');
 import { AFM } from '@gooddata/typings';
