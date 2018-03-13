@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import cloneDeep = require('lodash/cloneDeep');
 import isEmpty = require('lodash/isEmpty');
 import { AFM } from '@gooddata/typings';

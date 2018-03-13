@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import * as Header from './interfaces/Header';
 import * as DataSourceUtils from './dataSources/utils';
 import * as DataSource from './dataSources/DataSource';

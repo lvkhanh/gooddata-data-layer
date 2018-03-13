@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import compact = require('lodash/compact');
 import flatMap = require('lodash/flatMap');
 import get = require('lodash/get');

@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 export type SortDirection = 'asc' | 'desc';
 
 export type EmbeddedFilter = IEmbeddedDateFilter | IEmbeddedListAttributeFilter;
