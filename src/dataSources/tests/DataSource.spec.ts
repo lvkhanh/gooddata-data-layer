@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import * as stringify from 'json-stable-stringify';
 import { AFM } from '@gooddata/typings';
 import { DataSource } from '../DataSource';

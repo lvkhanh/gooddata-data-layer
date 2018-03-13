@@ -1,3 +1,4 @@
+// (C) 2007-2018 GoodData Corporation
 import { IDataSource } from '../interfaces/DataSource';
 
 export function dataSourcesMatch<T>(
