@@ -10,12 +10,12 @@
   ],
   "typings": "dist/index.d.ts",
   "dependencies": {
+    "@gooddata/typings": "2.0.0-alpha0",
     "json-stable-stringify": "^1.0.1",
     "lodash": "^4.17.4",
     "rxjs": "^5.5.6"
   },
   "devDependencies": {
-    "@gooddata/typings": "2.0.0-alpha0",
     "@types/express": "4.0.37",
     "@types/invariant": "2.2.29",
     "@types/jest": "21.1.1",
